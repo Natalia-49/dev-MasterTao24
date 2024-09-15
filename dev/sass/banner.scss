@@ -1,0 +1,27 @@
+.banner{
+    .swiper-slide{
+        border-radius: 20px;
+    }
+    .container{
+        min-height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 126%;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        max-width: 463px;
+    }
+    &-description{              
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 136%;
+        margin-bottom: 37px;
+        max-width: 320px;
+    }
+}
