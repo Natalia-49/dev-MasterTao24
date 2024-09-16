@@ -23,5 +23,21 @@
         line-height: 136%;
         margin-bottom: 37px;
         max-width: 320px;
+    }   
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 13px 35px;
+    }   
+    .swiper-pagination-bullet{
+        border: 2px solid $color;
+        opacity: 0.9;
+        background: transparent;         
     }
-}
+    .swiper-pagination-bullet-active{
+        background: $color;        
+    } 
+    .swiper-button-prev, .swiper-button-next{
+        color: $color;
+        max-width: 160px;        
+        width: 100%;
+        }
+    }

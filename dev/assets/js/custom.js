@@ -86,4 +86,4 @@ const swiper = new Swiper('.swiper', {
     }
   }
 console.log(man.children.daughter.son2.name)
-console.log(woman.children.daughter.son)
+console.log(woman.children.daughter.son.name)
