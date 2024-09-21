@@ -1,6 +1,9 @@
 .banner{
+    padding: 0 12px;
     .swiper-slide{
         border-radius: 20px;
+        padding: 0 132px;
+        background-position: center;
     }
     .container{
         min-height: 700px;
@@ -23,7 +26,7 @@
         line-height: 136%;
         margin-bottom: 37px;
         max-width: 320px;
-    }   
+    }  
     .swiper-button-prev, .swiper-button-next{
         color: $color;
         height: 0;
