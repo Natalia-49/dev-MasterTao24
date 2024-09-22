@@ -7,10 +7,18 @@ const swiper = new Swiper('.swiper', {
     },
      
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      enabled: false,
     },
-     
+
+    breakpoints: {
+      992: {
+        navigation: {
+          enabled: true,
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      },
+    }      
   });
 
 

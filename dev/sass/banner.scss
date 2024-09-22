@@ -8,6 +8,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        padding: 0 12px 55px;
     }
     &-title{
         font-weight: 700;
@@ -27,11 +28,11 @@
     .swiper-button-prev, .swiper-button-next{
         color: $color;
         height: 0;
-        max-width: 1623px;
+        max-width: 1598px;
         width: 100%;
         padding: 0 50px;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, 23px);
         justify-content: flex-start;
         &:hover{
             color: $secondary-color;
