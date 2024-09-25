@@ -1,12 +1,15 @@
-.container{
-    margin-top: 68px;
+
+.container-calculation{
+    margin-top: 98px;    
 }
-.calculation-form{
+
+.calculation-form {
     max-width: 626px;
     width: 100%;
     border-radius: 20px;
-    background-color: $bg-section;
+    background-color: #363A4D;
     padding: 50px 50px 61px;
+    box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
 }
 .form-row{
     display: flex;
