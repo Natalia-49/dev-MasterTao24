@@ -1,62 +1,66 @@
-.container-calculation{
-    margin-top: 98px;  
+.container-calculation {
+    margin: 98px;
+    max-width: 1182px;    
+    display: flex;
+    flex-direction: column;     
+    align-items: center;   
     .calculation-form {
-    max-width: 626px;
-    width: 100%;
-    border-radius: 20px;
-    background-color: #363A4D;
-    padding: 50px 50px 61px;
-    box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
-}
-.form-row{
-    display: flex;
-    gap: 30px;
-}
-.form-column{
-    width: 100%;
-}
-.form-input{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    label{
-        margin-bottom: 6px;        
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 126%;
+        max-width: 626px;
+        width: 100%;
+        border-radius: 20px;
+        background-color: #363A4D;
+        padding: 50px 50px 61px;
+        box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
     }
-    input{
-        border-radius: 10px;       
-        padding: 17px 12px;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 126%;
-        color:$color;
-        &::placeholder{            
-            font-weight: 400;
+    .form-row{
+        display: flex;
+        gap: 30px;
+    }
+    .form-column{
+        width: 100%;
+    }
+    .form-input{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        label{
+            margin-bottom: 6px;        
+            font-weight: 600;
             font-size: 15px;
             line-height: 126%;
-            color: #cbcbcb;
         }
-        &:focus-visible{
-           outline: none; 
-        }
-        &:hover{
-            box-shadow: 0px 0px 1px 1px $primary-color;
-        }
-        &:focus{
-            box-shadow: 0px 0px 1px 1px $secondary-color;
-        }
-        &:active{
-            box-shadow: 0px 0px 1px 2px $secondary-color;
-        }         
-    }    
-}
-.control-box{
-    position: relative;
-    margin-bottom: 14px;
-    &:first-child{
-        margin-top: 19px;
+        input{
+            border-radius: 10px;       
+            padding: 17px 12px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 126%;
+            color:$color;
+            &::placeholder{            
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 126%;
+                color: #cbcbcb;
+            }
+            &:focus-visible{
+                outline: none; 
+            }
+            &:hover{
+                box-shadow: 0px 0px 1px 1px $primary-color;
+            }
+            &:focus{
+                box-shadow: 0px 0px 1px 1px $secondary-color;
+            }
+            &:active{
+                box-shadow: 0px 0px 1px 2px $secondary-color;
+            }         
+        }    
     }
-}  
+    .control-box{
+        position: relative;
+        margin-bottom: 14px;
+        &:first-child{
+            margin-top: 19px;
+        }
+    }  
 }
