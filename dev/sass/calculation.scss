@@ -1,9 +1,6 @@
-
 .container-calculation{
-    margin-top: 98px;    
-}
-
-.calculation-form {
+    margin-top: 98px;  
+    .calculation-form {
     max-width: 626px;
     width: 100%;
     border-radius: 20px;
@@ -61,4 +58,5 @@
     &:first-child{
         margin-top: 19px;
     }
+}  
 }
