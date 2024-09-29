@@ -20,8 +20,16 @@ const swiper = new Swiper('.swiper', {
       },
     }      
   });
+  const typeFile = document.querySelectorAll('.custom-file')
 
+  typeFile.forEach(item => {
+    item.addEventListener('change', () => {
+      const fileName = item.closest('.form-input').querySelector('.file-name')
+      fileName.innerHTML = item.files[0].name;
+    })
+  })
 
+  
   const latte = {
     type: "coffee drink",
     price: "1.5$",
