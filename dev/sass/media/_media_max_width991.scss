@@ -66,9 +66,77 @@
             margin-bottom: 18px; 
             max-width: 260px;
         }  
-        }    
-}
-.section{
-    padding: $section-padding-mobile;
+    } 
+    .section{
+    padding: $section-padding-mobile;    
+    } 
+    .calculation{
+        padding-top: 55px;
+        .calculation-row{
+            .calculation-form {
+                margin: 0 auto;
+                padding: 54px 30px 27px; 
+
+                .form-row{
+                    flex-direction: column;
+                    gap: 0;
+                    .form-column{
+                        .form-input{
+                            .file-name{
+                                input[type=file] + label {   
+                                    margin-top: 33px;
+                                }
+                            }
+                        }
+                    
+                        .control-box{                
+                            &:first-child{
+                                margin-top: 6px;
+                            }
+                            &:last-child{
+                                margin-bottom: 18px;
+                            }
+                        }             
+                    }                 
+                }
+                .btn{
+                    &.btn-lg {                        
+                        padding: 21px 17px 17px 23px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    img {
+                        margin-left: 83px;                                         
+                    }
+                }
+            }
+        }
+       
+    .calculation-man{
+        display: none;
+    }
+    }
+    
 }
 
+input{
+    &[type=file]{
+        + label{   
+            margin-top: 33px;
+            background-position: initial;
+        }
+    }
+} 
+.template-title{
+    text-align: center;        
+    &::before{        
+        bottom: 28px;
+    }
+    
+    h2{
+        font-size: 24px;
+    }
+    h4{        
+        font-size: 16px;
+    }
+}

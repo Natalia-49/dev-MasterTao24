@@ -1,21 +1,22 @@
 .calculation {      
-    padding: 98px 20px 100px;
-    // padding: 98px 12px 100px;
-    margin: 0 auto;
+    padding: 98px 0px 100px;    
+    .container{
+        position: relative;
+        margin: 0 auto;
     max-width: 1182px;
     width: 100%;
     .template-title {
         padding-bottom: 52px;
     }
+    }
+    
    .calculation-row{
         display: flex; 
-        max-width: 1182px;
-        width: 100%;
-        position: relative;
+        
         .calculation-form {
             max-width: 626px;
             width: 100%;
-            max-height: 597px;
+            
             border-radius: 20px;
             background-color: #363A4D;
             padding: 50px 50px 61px;
@@ -46,7 +47,7 @@
                         }
                         input{
                             border-radius: 10px;       
-                            padding: 17px 12px;
+                            padding: 17px 18px;
                             font-weight: 600;
                             font-size: 15px;
                             line-height: 126%;
