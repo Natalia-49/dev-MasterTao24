@@ -2,12 +2,11 @@
    
     .container{ 
         padding: 0 20px;  
-        .template-title{
-            text-align: center;        
-            &::before{        
-                bottom: 28px;
+        .template-title{                 
+            &::before{                
+                bottom: 28px;               
             }
-            
+           
             h2{
                 font-size: 24px;
             }
@@ -80,9 +79,20 @@
             max-width: 260px;
         }  
     } 
-    .section{
-    padding: $section-padding-mobile;    
+    section{
+        padding: $section-padding-mobile;   
+        &.bg-section{        
+            padding-left: 0;
+            padding-right: 0;
+            &::before{
+                width: 100%;            
+                border-radius: 0;                        
+            }
+        }
     } 
+    
+    
+
     .calculation{
         padding-top: 55px;
         .calculation-row{
