@@ -1,7 +1,20 @@
 @media screen and (max-width: 991.9px) {
    
     .container{ 
-        padding: 0 20px;            
+        padding: 0 20px;  
+        .template-title{
+            text-align: center;        
+            &::before{        
+                bottom: 28px;
+            }
+            
+            h2{
+                font-size: 24px;
+            }
+            h4{        
+                font-size: 16px;
+            }
+            }          
     }
         
     .custom-navbar{            
@@ -116,27 +129,13 @@
         display: none;
     }
     }
-    
-}
-
-input{
+    input{
     &[type=file]{
         + label{   
-            margin-top: 33px;
-            background-position: initial;
+            margin-top: 33px;            
         }
     }
-} 
-.template-title{
-    text-align: center;        
-    &::before{        
-        bottom: 28px;
-    }
-    
-    h2{
-        font-size: 24px;
-    }
-    h4{        
-        font-size: 16px;
-    }
+    } 
+   
 }
+

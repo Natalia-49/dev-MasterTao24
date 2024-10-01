@@ -108,6 +108,7 @@ ul {
 .swiper-pagination-bullet-active{
     background: $color;        
 } 
+
 .template-title{
     text-align: center;    
     position: relative;
@@ -122,7 +123,30 @@ ul {
         height: 2px;
         background: $secondary-color;
     }
-    
+    &.case-2{
+        text-align: left;
+        &::before{
+            left: 0;
+            transform: none;  
+        }
+    } 
+    &.case-3{
+        text-align: left;
+        max-width: 626px;
+        &::before{
+            display: none;  
+        }
+        h2{
+            &::after{
+                content: "";
+                width: 85px;
+                height: 2px;
+                background: $secondary-color;
+                display: inline-block;
+                margin: 0 20px 10px;
+            }
+        }
+    } 
    
     h2{
         font-weight: 700;
