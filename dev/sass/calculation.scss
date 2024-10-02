@@ -5,6 +5,9 @@
         margin: 0 auto;
     max-width: 1182px;
     width: 100%;
+    padding: 0 22px;
+// padding нет
+
     .template-title {
         padding-bottom: 52px;
     }
@@ -19,7 +22,7 @@
             
             border-radius: 20px;
             background-color: #363A4D;
-            padding: 50px 50px 61px;
+            padding: 50px 50px 55px;
             box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
             .form-row{
                 display: flex;
@@ -87,8 +90,10 @@
         
         .calculation-man{
             position: absolute;
-            left: 600px;
-            bottom: -113px;
+            // left: 600px;
+            // bottom: -113px;
+            left: 618px;
+            bottom: -112px;           
             max-width: 560px;
             min-width: 400px;
             width: 29.167vw;              

@@ -225,8 +225,9 @@ section{
     padding: $section-padding;
     &.bg-section{
         position: relative;
-        padding-left: 88px;
-        padding-right: 88px;
+        // padding-left: 88px;
+        // padding-right: 88px;
+        padding-right: 90px;
         &::before{
             content: "";
             left: 50%;
@@ -234,7 +235,7 @@ section{
             top: 0;
             position: absolute;
             display: flex;
-            width: calc(100% - 100px);
+            width: calc(100% - 88px);
             max-width: 1820px;
             height: 100%;
             background-color: $bg-section;
