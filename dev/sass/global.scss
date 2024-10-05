@@ -42,9 +42,9 @@ ul {
 //     }
 //   }
 
-  .container{
+.container{
     max-width: 1164px;
-  }
+}
 
 .btn {
     font-size: 15px;
@@ -97,17 +97,17 @@ ul {
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
     line-height: 0;
 }
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-    bottom: 43px;
-} 
+
 .swiper-pagination-bullet{
     border: 2px solid $color;
     opacity: 0.9;
-    background: transparent;         
-}
-.swiper-pagination-bullet-active{
+    background: transparent; 
+    &.swiper-pagination-bullet-active{
     background: $color;        
-} 
+    }         
+}
+
+
 
 .template-title{
     text-align: center;    
@@ -121,23 +121,15 @@ ul {
         bottom: 33px;
         width: 85px;
         height: 2px;
-        background: $secondary-color;
+        background: $secondary-color;        
     }
-}
-.template-title{
-    text-align: center;    
-    position: relative;
-    padding-bottom: 48px;
-    &::before{
-        content:"";
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        bottom: 33px;
-        width: 85px;
-        height: 2px;
-        background: $secondary-color;
-    }
+    &.color-primary{
+        &::before{
+            background: $primary-color;  
+        }
+          
+        }
+
       
     h2{
         font-weight: 700;
@@ -222,12 +214,10 @@ input{
     }
 }
 section{
-    padding: $section-padding;
+    // padding: $section-padding;
     &.bg-section{
         position: relative;
-        // padding-left: 88px;
-        // padding-right: 88px;
-        padding-right: 90px;
+       
         &::before{
             content: "";
             left: 50%;

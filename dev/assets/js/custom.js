@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#banner-slider', {
     loop: true,
      
     pagination: {
@@ -20,8 +20,36 @@ const swiper = new Swiper('.swiper', {
       },
     }      
   });
-  const typeFile = document.querySelectorAll('.custom-file')
-
+  
+  
+  
+  const advantageSlide = document.querySelectorAll('#advantages .swiper-slide')
+  const swiperAdvantages = new Swiper('#advantages', {
+    
+    loop: true,
+    simulateTouch: true,
+    slidesPerView: 1,
+    
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      enabled: true,
+    },
+  breakpoints:{
+    992:{
+      spaceBetween: 0,
+      loop: false,
+      slidesPerGroup: advantageSlide,
+      simulateTouch: false,
+      pagination: {
+        enabled: false,
+        el: '.swiper-pagination',
+      }
+    }
+  }
+    
+  });
+const typeFile = document.querySelectorAll('.custom-file')
   typeFile.forEach(item => {
     item.addEventListener('change', () => {
       const fileName = item.closest('.form-input').querySelector('.file-name')
@@ -30,6 +58,12 @@ const swiper = new Swiper('.swiper', {
   })
 
   
+
+
+
+
+
+
   const latte = {
     type: "coffee drink",
     price: "1.5$",

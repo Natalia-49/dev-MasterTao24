@@ -34,4 +34,15 @@
        
        
     }
+    #advantages{
+        .swiper-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            
+            .advantage{
+            max-width: 263px;            
+            }
+        }
+        
+    }
 }
