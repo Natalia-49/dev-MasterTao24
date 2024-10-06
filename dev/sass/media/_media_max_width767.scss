@@ -1,3 +1,15 @@
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 861.99px) {
+    .slider-template{
+        width: 360px;
+        ~.swiper-navigation{
+            max-width: 544px;
+        }
+        
+    }
+}
 
+@media screen and (max-width: 767.99px) {
+.swiper-navigation{
+    display: none;
+}
 }

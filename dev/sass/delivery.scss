@@ -1,0 +1,33 @@
+.delivery{
+    position: relative;
+    .swiper-slide{
+        background-color: $bg-section;
+        height: 482px;
+    }
+    .swiper-navigation{
+        position: absolute;
+        bottom: 241px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        max-width: 1323px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: yellow;
+        .swiper-button-prev-unique, .swiper-button-next-unique{
+            height: 46px;
+            width: 46px;
+            color: #6C6F7F;
+            &:hover{
+                color: $secondary-color;
+            }
+            &.swiper-button-prev{
+                left: 0;
+            }
+            &.swiper-button-next{
+                right: 0;
+            }
+        }
+    }
+}
+

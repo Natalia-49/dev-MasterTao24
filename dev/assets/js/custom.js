@@ -1,4 +1,4 @@
-const swiper = new Swiper('#banner-slider', {
+const swiperBanner = new Swiper('#banner-slider', {
     loop: true,
      
     pagination: {
@@ -47,8 +47,73 @@ const swiper = new Swiper('#banner-slider', {
       }
     }
   }
-    
   });
+
+
+const swiperSliderTemplate = new Swiper('.slider-template', {
+    speed: 400,
+    loop: true,
+    simulateTouch: true,
+    slidesPerView: 1,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      enabled: true,
+    },
+    navigation: {
+      enabled: false,
+      nextEl: '.swiper-button-next-unique',
+      prevEl: '.swiper-button-prev-unique',
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        navigation: {
+          enabled: true, 
+          nextEl: '.swiper-button-next-unique',
+          prevEl: '.swiper-button-prev-unique',         
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          enabled: true,
+        },
+      },
+      861: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        navigation: {
+          enabled: true, 
+          nextEl: '.swiper-button-next-unique',
+          prevEl: '.swiper-button-prev-unique',         
+        },
+        
+        pagination: {
+        enabled: false,
+        el: '.swiper-pagination',
+      },
+      },
+      1252: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+
+        navigation: {
+          enabled: true, 
+          nextEl: '.swiper-button-next-unique',
+          prevEl: '.swiper-button-prev-unique',         
+        },
+
+        pagination: {
+        enabled: false,
+        el: '.swiper-pagination',
+      }
+      } 
+    }      
+  }); 
+
+  
 const typeFile = document.querySelectorAll('.custom-file')
   typeFile.forEach(item => {
     item.addEventListener('change', () => {
