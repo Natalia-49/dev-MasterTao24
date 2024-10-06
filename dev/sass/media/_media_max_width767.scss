@@ -9,7 +9,10 @@
 }
 
 @media screen and (max-width: 767.99px) {
-.swiper-navigation{
-    display: none;
-}
+    .delivery{
+        .swiper-navigation{
+            display: none;
+        }
+    }
+    
 }

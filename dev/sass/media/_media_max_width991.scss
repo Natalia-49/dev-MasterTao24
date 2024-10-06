@@ -50,7 +50,7 @@
         }
     }
     .banner{  
-        // padding-bottom: 0;
+        
         .swiper-slide{        
             &::before{
                 content: "";
@@ -81,8 +81,16 @@
         }  
     } 
     section{
+         padding: $section-padding-mobile; 
+         &.banner{
+            padding-top: 0;
+            padding-bottom: 55px;
+         }
+         &.calculation{
+            padding-top: 0;
+         }
         &.advantages{            
-        // padding: $section-padding-mobile; 
+            padding: 54px 0 76px;
         .swiper {            
             overflow: visible;  
             .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -92,8 +100,8 @@
         }
         }
         &.bg-section{        
-            padding-left: 0;
-            padding-right: 0;            
+            // padding-left: 0;
+            // padding-right: 0;            
             &::before{
                 width: 100%;            
                 border-radius: 0;                        

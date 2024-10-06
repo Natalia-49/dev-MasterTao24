@@ -44,6 +44,40 @@ ul {
 
 .container{
     max-width: 1164px;
+    .template-title{
+        text-align: center;    
+        position: relative;
+        padding-bottom: 48px;
+        &::before{
+            content:"";
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: 33px;
+            width: 85px;
+            height: 2px;
+            background: $secondary-color;        
+        }
+        &.color-primary{
+            &::before{
+                background: $primary-color;  
+            }
+              
+            }
+    
+          
+        h2{
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 125%;
+            text-transform: uppercase; 
+            margin-bottom: 6px;
+        }
+        h4{
+            font-weight: 400;
+            font-size: 24px;
+        }
+    }
 }
 
 .btn {
@@ -107,42 +141,6 @@ ul {
     }         
 }
 
-
-
-.template-title{
-    text-align: center;    
-    position: relative;
-    padding-bottom: 48px;
-    &::before{
-        content:"";
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        bottom: 33px;
-        width: 85px;
-        height: 2px;
-        background: $secondary-color;        
-    }
-    &.color-primary{
-        &::before{
-            background: $primary-color;  
-        }
-          
-        }
-
-      
-    h2{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 125%;
-        text-transform: uppercase; 
-        margin-bottom: 6px;
-    }
-    h4{
-        font-weight: 400;
-        font-size: 24px;
-    }
-}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -214,7 +212,7 @@ input{
     }
 }
 section{
-    // padding: $section-padding;
+    padding: $section-padding;
     &.bg-section{
         position: relative;
        
