@@ -1,6 +1,7 @@
 @media screen and (max-width: 861.99px) {
     .slider-template{
         width: 360px;
+        padding-bottom: 50px;
         ~.swiper-navigation{
             max-width: 544px;
         }
@@ -10,9 +11,27 @@
 
 @media screen and (max-width: 767.99px) {
     .delivery{
+        .slider-template {
+            max-width: 335px;
+        }
+        .swiper{
+           .card{
+                max-width: 335px;
+                &-price{            
+                    margin-bottom: 24px;
+                }
+                .btn-row{
+                    .btn{
+                        max-width: 138px;
+                        padding: 13px 8px;
+                    }
+                }
+            } 
+        }
         .swiper-navigation{
             display: none;
         }
     }
+    
     
 }

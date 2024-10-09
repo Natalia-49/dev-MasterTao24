@@ -35,10 +35,7 @@
                 margin: 0 0 28px 0;
                 padding: 0;
                 li{
-                    list-style: none;
-                    // display: flex;
-                    // gap: 10px;
-                    // width: 100%;
+                    list-style: none;                    
                     color: $color;
                     img{
                         margin-right: 10px;
@@ -72,7 +69,11 @@
                 }
             }      
         }
-    
+    .slider-template{
+        .swiper-pagination{
+            bottom: 10px;
+        }
+    }
     .swiper-navigation{
         position: absolute;
         bottom: 342px;

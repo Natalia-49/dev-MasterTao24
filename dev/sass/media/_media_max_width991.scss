@@ -160,11 +160,12 @@
                     }
                 }
             }
+            .calculation-man{
+                display: none;
+            }
         }
        
-    .calculation-man{
-        display: none;
-    }
+    
         }
         
     }
@@ -174,6 +175,30 @@
             margin-top: 33px;            
         }
     }
+    } 
+
+    .delivery{
+        .template-title {
+            margin-bottom: 2px;           
+        }
+        .card{
+            padding: 0 23px 17px;
+            .img-box{
+                margin: 0 -23px 26px;                
+            }
+            &-option {                    
+                margin-top: 1px;
+            }
+            &-price {                
+                margin-bottom: 25px;                
+            }
+            .btn-row {
+                .btn {                
+                padding: 13px 9px;
+                }
+            }
+
+        }
     } 
    
 }
