@@ -1,4 +1,4 @@
-.delivery, .services{
+.services{
     position: relative;
     .template-title{
         margin-bottom: 18px;
@@ -101,3 +101,59 @@
     }
 }
 
+
+
+
+
+// .services{
+    
+//         .card{
+//             // padding: 0 20px 17px;  
+//             background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+//             min-height: 482px;
+//             padding-left: 30px;
+//                 .img-box{
+//                     margin: 0 -30px 26px;
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: center;
+//                     min-height: 482px;
+//                         // img{
+//                         //     height: 229px;
+//                         //     object-fit: contain;                    
+//                         // }
+//                 }
+//             &-title{                   
+//                 text-align: left;             
+//                 margin-bottom: 13px;
+//             }
+//             &-text{
+//                 font-weight: 400;
+//                 font-size: 15px;
+//                 line-height: 125%;
+//                 color: $color;
+//                 margin-bottom: 14px;
+//             }
+//         }
+//     }
+
+
+
+
+
+// .services{
+//     .card{
+//         &-title{
+//             font-weight: 400;
+//             font-size: 15px;
+//             line-height: 125%;
+//             color: $color;
+//         }
+//         &-text{
+//             font-weight: 400;
+//             font-size: 15px;
+//             line-height: 125%;
+//             color: $color;
+//         }
+//     }
+// }
