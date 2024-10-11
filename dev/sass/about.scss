@@ -1,0 +1,39 @@
+.about {      
+    padding: 145px 0px 136px;    
+    .container{
+        position: relative;
+        margin: 0 auto;
+    max-width: 1182px;
+    width: 100%;
+    padding: 0 22px;
+// padding нет
+
+    .template-title {
+        padding-bottom: 60px;
+    }
+    }
+    
+   .about-row{
+        display: flex; 
+        
+        .about-description {
+            max-width: 555px;
+            width: 100%; 
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 170%;   
+        }
+            
+        
+        .about-img{
+            position: absolute;            
+            left: 611px;
+            bottom: -75px;           
+            max-width: 550px;
+            width: 100%;
+            // min-width: 400px;
+            // width: 29.167vw;              
+        }  
+                
+   }   
+}
