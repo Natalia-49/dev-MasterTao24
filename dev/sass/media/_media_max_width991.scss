@@ -93,19 +93,20 @@
         }
         &.advantages{            
             padding: 54px 0 76px;
-            .swiper {            
-                overflow: visible;  
-                .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-                    bottom:  -16px;                
-                }          
-            }
+        .swiper {            
+            overflow: visible;  
+            .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+                bottom:  -16px;
+            }          
         }
-        &.about{
-            padding-top: 0;
-            padding-bottom: 34px;
         }
-        &.bg-section{        
-                      
+        &.delivery{
+            padding-bottom: 52px;
+        }
+        &.services{
+            padding: 52px 0px 50px;
+        }
+        &.bg-section{                         
             &::before{
                 width: 100%;            
                 border-radius: 0;                        
@@ -115,8 +116,7 @@
     
     
 
-    .calculation{
-        
+    .calculation{        
         padding: 55px 0px 60px;
         .container{
             padding: 0 20px;  
@@ -183,62 +183,53 @@
     } 
 
     .delivery{
-        .container{ 
-            padding: 0 20px;  
-            .template-title {
-                margin-bottom: 2px;           
-            }
-            .card{
-                padding: 0 23px 17px;
-                .img-box{
-                    margin: 0 -23px 26px;                
-                }
-                &-option {                    
-                    margin-top: 1px;
-                }
-                &-price {                
-                    margin-bottom: 25px;                
-                }
-                .btn-row {
-                    .btn {                
-                    padding: 13px 9px;
-                    }
-                }
-
-            }      
+        .template-title {
+            margin-bottom: 2px;           
         }
-        
+        .card{
+            padding: 0 23px 17px;
+            .img-box{
+                margin: 0 -23px 26px;                
+            }
+            &-option {                    
+                margin-top: 1px;
+            }
+            &-price {                
+                margin-bottom: 25px;                
+            }
+            .btn-row {
+                .btn {                
+                    max-width: 153px;
+                    width: 100%;
+                    padding: 13px 8px;
+                }
+            }
+
+        }
     } 
 
-    .about{
-        .container{
-            padding: 0 20px;  
-            .template-title{
-                padding-bottom: 45px;
-                &::before{
-                    bottom: 25px;
-                }
-            }
-            .about-row{            
-                margin: 0 auto;
-                padding-bottom: 34px;
-                flex-direction: column;
-                gap: 25px;
-                    .about-description {
-                        font-weight: 300;
-                        font-size: 16px;
-                        line-height: 150%;
-                        text-align: justify;
-                    }
-                    .about-img{
-                        max-width: 278px;
-                        display: inline-block;
-                        position: static;    
-                        align-self: center;       
-                    }
-            }
+    .services{
        
-    
+        .container{
+            .template-title{
+                padding-bottom: 35px;
+                &::before{
+                    bottom: 16px;
+                }                
+            }
+            .card{
+                .card-text{
+                line-height: 115%;
+                } 
+                .btn-row{
+                    .btn{
+                    max-width: 153px;
+                    width: 100%;
+                    padding: 13px 8px;
+                    }
+                }  
+            }
+            
         }
     }
    

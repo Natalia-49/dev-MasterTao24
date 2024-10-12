@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width: 767.99px) {
-    .delivery{
+    .delivery, .services{
         .slider-template {
             max-width: 335px;
         }
@@ -20,18 +20,15 @@
                 &-price{            
                     margin-bottom: 24px;
                 }
-                .btn-row{
-                    .btn{
-                        max-width: 138px;
-                        padding: 13px 8px;
-                    }
-                }
+               
             } 
         }
         .swiper-navigation{
             display: none;
         }
     }
-    
+    .services{
+        padding: 33px 2px 48px 0px;
+    }
     
 }
