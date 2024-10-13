@@ -12,13 +12,16 @@
                 h4{        
                     font-size: 16px;
                 }
+                h6{        
+                    font-size: 14px;
+                }
             }          
         }
     }
    
         
     .custom-navbar{            
-        padding: 13px 0px 13px; 
+        padding: 13px 8px 13px; 
         .navbar-brand{                
             img{
                 max-width: 126px;
@@ -106,6 +109,10 @@
         &.services{
             padding: 52px 0px 50px;
         }
+        &.about{
+            padding-top: 55px;
+            padding-bottom: 300px;
+        }
         &.bg-section{                         
             &::before{
                 width: 100%;            
@@ -165,7 +172,7 @@
                     }
                 }
             }
-            .calculation-man{
+            .calculation-img{
                 display: none;
             }
         }
@@ -232,6 +239,29 @@
             
         }
     }
-   
+   .about{
+    .container{
+        padding: 0 20px;  
+            .template-title{
+                padding-bottom: 47px;
+                &::before{
+                    bottom: 28px;
+                }
+            }
+            .calculation-row{
+                .about-description {
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-align: justify;
+                }
+                .calculation-img{
+                    left: 50px;
+                    bottom: -319px;               
+                    min-width: 278px;            
+                }
+            }
+    }
+   }
 }
 
+    
