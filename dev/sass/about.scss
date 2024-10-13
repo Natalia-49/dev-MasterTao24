@@ -1,20 +1,18 @@
-.about {      
+.abo ut {      
     padding: 145px 0px 136px;    
     .container{
         position: relative;
         margin: 0 auto;
-    max-width: 1182px;
-    width: 100%;
-    padding: 0 22px;
-// padding нет
-
-    .template-title {
-        padding-bottom: 60px;
-    }
+        max-width: 1182px;
+        width: 100%;
+        padding: 0 22px;
+        .template-title {
+            padding-bottom: 60px;
+        }
     }
     
    .about-row{
-        display: flex; 
+        display: flex;  
         
         .about-description {
             max-width: 555px;

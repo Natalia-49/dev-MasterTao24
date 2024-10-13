@@ -1,16 +1,14 @@
-.calculation {      
+.calculation, .about{      
     padding: 98px 0px 113px;    
     .container{
         position: relative;
         margin: 0 auto;
-    max-width: 1182px;
-    width: 100%;
-    padding: 0 22px;
-// padding нет
-
-    .template-title {
-        padding-bottom: 52px;
-    }
+        max-width: 1182px;
+        width: 100%;
+        padding: 0 22px;
+        .template-title {
+            padding-bottom: 52px;
+        }
     }
     
    .calculation-row{
@@ -88,15 +86,45 @@
         }
             
         
-        .calculation-man{
-            position: absolute;
-            // left: 600px;
-            // bottom: -113px;
+        .calculation-img{
+            position: absolute;           
             left: 618px;
             bottom: -112px;           
             max-width: 560px;
             min-width: 400px;
             width: 29.167vw;              
+        }     
+   }   
+}
+
+.about {      
+    padding: 145px 0px 136px;    
+    .container{        
+        .template-title {
+            padding-bottom: 60px;
+        }
+    }
+    .calculation-row{     
+        .about-description {
+            max-width: 555px;
+            width: 100%; 
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 170%;   
+            span{
+                font-weight: 400;
+            }
+        }
+            
+        
+        .calculation-img{
+                       
+            left: 611px;
+            bottom: -75px;           
+            // max-width: 550px;
+            // width: 100%;
+            // min-width: 400px;
+            // width: 29.167vw;              
         }  
                 
    }   
