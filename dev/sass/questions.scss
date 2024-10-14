@@ -1,4 +1,4 @@
-.calculation, .about, .questions{      
+.calculation, .about{      
     padding: 98px 0px 113px;    
     .container{
         position: relative;
@@ -10,18 +10,22 @@
             padding-bottom: 52px;
         }
     }
-}
+    
    .calculation-row{
         display: flex; 
         
         .calculation-form {
             max-width: 626px;
-            width: 100%;            
+            width: 100%;
+            
             border-radius: 20px;
             background-color: #363A4D;
             padding: 50px 50px 55px;
             box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
-               .form-column{
+            .form-row{
+                display: flex;
+                gap: 30px;
+                .form-column{
                     width: 100%;
                    .form-input{
                         display: flex;
@@ -79,7 +83,8 @@
                 }
            
             }
-        
+        }
+            
         
         .calculation-img{
             position: absolute;           
@@ -89,18 +94,9 @@
             width: 29.167vw;  
             min-width: 400px;             
         }     
-    }
+   }   
+}
 
-    .calculation{
-        .calculation-row{
-            .calculation-form {
-                .form-row{
-                    display: flex;
-                    gap: 30px;
-                }
-            }
-        }
-    }
 
 .about {      
     padding: 145px 0px 136px;    
@@ -127,49 +123,4 @@
             max-width: 550px;   
         }      
    }   
-}
-
-.questions{
-    .container{
-    .template-title {
-        padding-bottom: 70px;
-    }
-    .calculation-row{
-       .calculation-form {
-            max-width: 390px;
-            padding: 38px 40px;
-            h4{
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 126%;
-                margin-bottom: 8px;
-            }
-            p{
-                font-weight: 300;
-                font-size: 17px;
-                line-height: 126%;
-                margin-bottom: 23px;
-            }
-            .form-column{
-                .form-input{
-                    width: 100%;  
-                    margin-bottom: 14px;                  
-                        &:last-child{
-                            input{
-                                padding: 24px 18px;
-                                margin-bottom: 26px;
-                            }
-                        }
-                    
-                }
-                button{
-                    max-width: 310px;
-                    width: 100%;
-                }
-            }
-            
-        } 
-    }
-}
-    
 }
