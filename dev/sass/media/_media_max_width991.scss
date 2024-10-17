@@ -113,6 +113,9 @@
             padding-top: 55px;
             padding-bottom: 300px;
         }
+        &.questions{
+            padding: 62px 0 60px;
+        }
         &.bg-section{                         
             &::before{
                 width: 100%;            
@@ -262,6 +265,82 @@
             }
     }
    }
+//    .questions .calculation-row{
+//     flex-direction: column;
+//     gap: 28px;
+//    }
+   .questions {
+    .accordion{
+    max-width: 335px; 
+       .accordion-item{     
+    margin-bottom: 16px; 
+        &:last-child{
+        margin-bottom: 28px;
+        } 
+        .accordion-button{     
+        font-size: 16px;              
+        padding: 12px 19px 10px 19px;
+        
+        &::after {    
+            background-image: url(assets/img/arrow-circle-left-mobile.svg); 
+            background-size: cover;
+        }
+        
+    }  
+    }
+   }
 }
+    
+     
+    .questions .accordion-body{        
+        font-size: 14px;        
+        padding: 0 18px 8px;        
+    }
 
+
+    .questions{
+        .container{
+        .template-title {
+            padding-bottom: 48px;
+            &::before{
+                margin-bottom: 22px;
+            }
+        }
+        .calculation-row{
+            flex-direction: column;
+            gap: 0px;
+           .calculation-form {
+                max-width: 335px;
+                padding: 38px 20px 30px; 
+                h4{
+                    text-align: center;   
+                }               
+                p{
+                    font-weight: 400;
+                    text-align: center;                   
+                }
+                .form-column{
+                    .form-input{
+                       
+                            &:last-child{
+                                input{                                    
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        
+                    }
+                    button{
+                        max-width: 295px;
+                        img{
+                            margin-left: 66px;
+                        }
+                    }
+                }
+                
+            } 
+        }
+    }
+    
+}
+}
     
