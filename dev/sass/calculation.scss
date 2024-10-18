@@ -1,4 +1,4 @@
-.calculation, .about, .questions{      
+.calculation, .about, .questions, .collaboration{      
     padding: 98px 0px 113px;    
     .container{
         position: relative;
@@ -9,18 +9,15 @@
         .template-title {
             padding-bottom: 52px;
         }
-    }
-}
-   .calculation-row{
-        display: flex; 
-        
-        .calculation-form {
-            max-width: 626px;
-            width: 100%;            
-            border-radius: 20px;
-            background-color: #363A4D;
-            padding: 50px 50px 55px;
-            box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
+        .calculation-row{
+            display: flex;         
+            .calculation-form {
+                max-width: 626px;
+                width: 100%;            
+                border-radius: 20px;
+                background-color: #363A4D;
+                padding: 50px 50px 55px;
+                box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
                .form-column{
                     width: 100%;
                    .form-input{
@@ -76,31 +73,30 @@
                             margin-top: 19px;
                         }
                     }  
-                }
-           
-            }
-        
-        
-        .calculation-img{
-            position: absolute;           
-            left: 618px;
-            bottom: -112px;           
-            max-width: 560px;           
-            width: 29.167vw;  
-            min-width: 400px;             
-        }     
+                }           
+            } 
+            .calculation-img{
+                position: absolute;           
+                left: 618px;
+                bottom: -112px;           
+                max-width: 560px;           
+                width: 29.167vw;  
+                min-width: 400px;             
+            }     
+        }
     }
-
-    .calculation{
-        .calculation-row{
-            .calculation-form {
-                .form-row{
-                    display: flex;
-                    gap: 30px;
-                }
+}
+  
+.calculation{
+    .calculation-row{
+        .calculation-form {
+            .form-row{
+                display: flex;
+                gap: 30px;
             }
         }
     }
+}
 
 .about {      
     padding: 145px 0px 136px;    
@@ -119,135 +115,155 @@
             span{
                 font-weight: 400;
             }
-        }
-                    
+        }                    
         .calculation-img{                       
             left: 611px;
             bottom: -75px;                
             max-width: 550px;   
         }      
-   }   
+    }   
 }
 
 .questions{
-    .container{
-    .template-title {
-        padding-bottom: 70px;
-    }
-    .calculation-row{
-        gap: 34px;
-       .calculation-form {
-            max-width: 390px;
-            padding: 38px 40px;
-            h4{
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 126%;
-                margin-bottom: 8px;
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 68px;
+        .container{
+            .template-title {
+                padding-bottom: 70px;
             }
-            p{
-                font-weight: 300;
-                font-size: 17px;
-                line-height: 126%;
-                margin-bottom: 23px;
-            }
-            .form-column{
-                .form-input{
-                    width: 100%;  
-                    margin-bottom: 14px;                  
-                        &:last-child{
-                            input{
-                                padding: 24px 18px;
-                                margin-bottom: 26px;
+            .calculation-row{
+                gap: 34px;
+                .accordion{
+                    max-width: 716px;
+                    width: 100%;
+                    .accordion-item{
+                        border: 1px solid #3a444e;
+                        border-radius: 10px;   
+                        margin-bottom: 16px;
+                        min-height: 64px;   
+                        &:not(.collapsed){     
+                            box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
+                        }
+                        &:hover{        
+                            border-color: $primary-color;
+                        }
+                        .accordion-button{       
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 125%;
+                            color: $color;
+                            background-color: $bg-body;
+                            padding: 18px 0 18px 34px;
+                            min-height: 64px;
+                            &:not(.collapsed){    
+                                background: #fff;
+                                color: $bg-body;
+                                border-top-left-radius: 10px; 
+                                border-top-right-radius: 10px;
+                                &::after {
+                                    background-image: url(assets/img/arrow-circle-left.svg); 
+                                    transform: rotate(-90deg);
+                                }
+                            }
+                            &:focus{    
+                                box-shadow: none;
+                            }
+                            &::after {    
+                                background-image: url(assets/img/arrow-circle-left-1.svg); 
+                                width: 27px;  
+                                height: 27px;                            
                             }
                         }
-                    
-                }
-                button{
-                    max-width: 310px;
-                    width: 100%;
-                }
-            }
+                        .accordion-body{
+                            background: #fff;
+                            color: $bg-body;
+                            font-weight: 300;
+                            font-size: 17px;
+                            line-height: 145%;
+                            padding-left: 34px;
+                            border-bottom-left-radius: 10px; 
+                            border-bottom-right-radius: 10px;
+                        }
+                    }
+                .calculation-form {
+                    max-width: 390px;
+                    padding: 38px 40px;
+                    h4{
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 126%;
+                        margin-bottom: 8px;
+                    }
+                    p{
+                        font-weight: 300;
+                        font-size: 17px;
+                        line-height: 126%;
+                        margin-bottom: 23px;
+                    }
+                    .form-column{
+                        .form-input{
+                            width: 100%;  
+                            margin-bottom: 14px;                  
+                                &:last-child{
+                                    input{
+                                        padding: 24px 18px;
+                                        margin-bottom: 26px;
+                                    }
+                                }                            
+                        }
+                        button{
+                            max-width: 310px;
+                            width: 100%;
+                        }
+                    }
             
-        } 
+                } 
+            }
+        }    
+        }
+}
+
+.collaboration {
+    padding-bottom: 66px;
+    padding-top: 88px;
+    .template-title{
+        margin-bottom: 52px;
     }
-}
-    
-}
-
-
-.questions{   
-    background-color: transparent;
-}
-
-.questions .accordion{
-    max-width: 716px;
-    width: 100%;
-}
-.questions .accordion-item{
-    border: 1px solid #3a444e;
-    border-radius: 10px;   
-    background-color: $bg-body;    
-    margin-bottom: 16px;
-    min-height: 64px;    
-}
-.questions .accordion-item:not(.collapsed){     
-    box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
-    // border-radius: 10px;  
-}
-.questions .accordion-button{       
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 125%;
-    color: $color;
-    background-color: transparent;
-    padding: 18px 0 18px 34px;
-}
-.questions .accordion-button:not(.collapsed){    
-    background: #fff;
-    color: $bg-body;
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px;
-}
-.questions .accordion-body{
-    background: #fff;
-    color: $bg-body;
-    font-weight: 300;
-    font-size: 17px;
-    line-height: 145%;
-    padding-left: 34px;
-    border-bottom-left-radius: 10px; 
-    border-bottom-right-radius: 10px;
-}
-
-.questions .accordion-item:hover{        
-    border-color: $primary-color;
-}
-.questions .accordion-button:focus{    
-    box-shadow: none;
-}
-
-
-
-
-
-
-
-// .questions .accordion-item:first-of-type > .accordion-header .accordion-button{
-//     border-top-left-radius: 0;
-//     border-top-right-radius: 0;
-// }
-// .questions .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed{
-//     border-bottom-right-radius: 0;
-//     border-bottom-left-radius: 0;
-// }
-.questions .accordion-button::after {    
-    background-image: url(assets/img/arrow-circle-left-1.svg); 
-    width: 27px;  
-    height: 27px;
-
-}
-.questions .accordion-button:not(.collapsed)::after {
-    background-image: url(assets/img/arrow-circle-left.svg); 
-    transform: rotate(-90deg);
+    .collaboration-column{
+        display: flex;
+        flex-direction: column;
+        .collaboration-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &-reverse{
+                flex-direction: row-reverse;
+            }
+            .collaboration-img{    
+                max-width: 555px;
+                width: 100%;
+                height: 100;
+                box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
+                border-radius: 20px;
+                background-size: contain;
+            }
+        }
+        .collaboration-list{
+            display: block;
+            max-width: 528px;
+            padding: 0;
+                ::marker{
+                padding: 0;
+                text-indent: 26px;
+            }
+            &-item {    
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 157%;
+                margin-bottom: 40px;
+                margin-left: 0;
+            }   
+        }
+    }
 }
