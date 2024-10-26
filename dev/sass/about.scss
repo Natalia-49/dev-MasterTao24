@@ -1,0 +1,41 @@
+.about{      
+    padding: 146px 0px 0px;
+    margin-bottom: -104px;
+    .container{
+        position: relative;
+        margin: 0 auto;
+        max-width: 1182px;
+        width: 100%;
+        padding: 0 22px;
+        .template-title {
+            padding-bottom: 49px;
+        }     
+        .about-row{
+            display: flex; 
+            flex-direction: row;  
+            max-width: 1182px;            
+            gap: 35px;     
+            .about-description {
+                max-width: 555px;
+                width: 100%; 
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 170%; 
+                padding-top: 15px;  
+                span{
+                    font-weight: 400;
+                }
+            }                    
+            .about-img{ 
+                height: auto;
+                width: 100%;
+                transform: translateY(-153px); 
+                img{
+                    max-width: 550px;
+                    width: 29.167vw;
+                    min-width: 335px;                 
+                }        
+            }     
+        }
+    }
+}

@@ -2,11 +2,18 @@
     padding: 60px 0 37px;
     .container{
         padding-top: 40px;
-        border-top: 2px solid $primary-color;
+        // border-top: 2px solid $primary-color;
+        .template-title {
+            padding-bottom: 0px;
+            &::before{                
+                bottom: 35px;
+                width: 1140px;               
+            }
+        }     
         .footer-row{
             display: flex;
             flex-direction: row;
-            gap: 92px;            
+            gap: 92px;                    
             .footer-column{
                 img{
                     margin-bottom: 28px;
@@ -48,7 +55,11 @@
                     }
                 }
             }
-
+            .footer-column-info{
+                display: flex;
+                flex-direction: row;
+                gap: 92px;          
+            }   
         }
     }
 }

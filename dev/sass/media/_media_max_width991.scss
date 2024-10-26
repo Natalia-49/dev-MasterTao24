@@ -94,7 +94,7 @@
         }
         &.about{
             padding-top: 55px;
-            padding-bottom: 300px;
+            padding-bottom: 84px;
         }
         &.questions{
             padding: 64px 0 60px;
@@ -108,8 +108,7 @@
     } 
         
     
-    .banner{  
-        
+    .banner{          
         .swiper-slide{        
             &::before{
                 content: "";
@@ -249,27 +248,33 @@
         }
     }
    .about{
-    .container{
-        padding: 0 20px;  
+        .container{
+            padding: 0 20px;  
             .template-title{
                 padding-bottom: 30px;
                 &::before{
                     bottom: 12px;
                 }
             }
-            .calculation-row{
+            .about-row{                
+                flex-direction: column;                  
+                gap: 25px;     
                 .about-description {
                     font-size: 16px;
                     line-height: 150%;
                     text-align: justify;
                 }
-                .calculation-img{
-                    left: 50px;
-                    bottom: -319px;               
-                    min-width: 278px;            
+                .about-img{  
+                    transform: none; 
+                    text-align: center;                       
+                    img{                        
+                        max-width: 335px; 
+                        min-width: 278px;
+                                   
+                    }      
                 }
             }
-    }
+        }
    }
     .questions{
         .container{
@@ -379,7 +384,13 @@
     }
     .footer{
         padding-top: 56px;
-        .container{           
+        .container{ 
+            .template-title {
+                padding-bottom: 0px;
+                &::before{  
+                    width: 335px;               
+                }
+            }               
             .footer-row{                
                 flex-direction: column;                
                 .footer-column-info{
