@@ -1,0 +1,175 @@
+.questions{      
+    padding: 0px 0px 84px;   
+    background-color: transparent;    
+    .container{
+        position: relative;
+        margin: 0 auto;
+        max-width: 1182px;
+        width: 100%;
+        padding: 0 22px;
+        .template-title {
+            padding-bottom: 62px;
+            &::before{
+                bottom: 48px;
+            }
+        }
+        .calculation-row{
+            display: flex; 
+            gap: 34px;
+            .accordion{
+                max-width: 716px;
+                width: 100%;
+                .accordion-item{
+                    border: 1px solid #3A444E;
+                    border-radius: 10px;   
+                    margin-bottom: 16px;
+                    min-height: 64px;   
+                    &:not(.collapsed){     
+                        box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
+                    }
+                    &:hover{        
+                        border-color: $primary-color;
+                    }
+                    .accordion-button{       
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 125%;
+                        color: $color;
+                        background-color: $bg-body;
+                        padding: 18px 0 18px 34px;
+                        min-height: 64px;
+                        &:not(.collapsed){    
+                            background: #fff;
+                            color: $bg-body;
+                            border-top-left-radius: 10px; 
+                            border-top-right-radius: 10px;
+                            &::after {
+                                background-image: url(assets/img/arrow-circle-left.svg); 
+                                transform: rotate(-90deg);
+                            }
+                        }
+                        &:focus{    
+                            box-shadow: none;
+                        }
+                        &::after {    
+                            background-image: url(assets/img/arrow-circle-left-1.svg); 
+                            width: 27px;  
+                            height: 27px;                            
+                        }
+                    }
+                    .accordion-body{
+                        background: #fff;
+                        color: $bg-body;
+                        font-weight: 300;
+                        font-size: 17px;
+                        line-height: 145%;
+                        padding-left: 34px;
+                        border-bottom-left-radius: 10px; 
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            .calculation-form {
+                max-width: 390px;
+                padding: 38px 40px;
+                h4{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 126%;
+                    margin-bottom: 8px;
+                    color: blue;
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 126%;
+                    margin-bottom: 23px;
+                }
+                .form-column{
+                    .form-input{
+                        width: 100%;  
+                        margin-bottom: 14px;                  
+                            &:last-child{
+                                input{
+                                    padding: 24px 18px;
+                                    margin-bottom: 26px;
+                                }
+                            }                            
+                    }
+                    // button{
+                    //     max-width: 310px;
+                    //     width: 100%;
+                    // }
+                }
+        
+            } 
+        }
+            .calculation-form {
+                max-width: 390px;
+                width: 100%;            
+                border-radius: 20px;
+                background-color: #363A4D;
+                padding: 40px 40px 28px;
+                box-shadow: 5px 15px 40px 0 rgba(11, 24, 97, 0.32);
+                h4{                    
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 126%;
+                    color: $color;
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 126%;
+                }
+               .form-column{
+                    width: 100%;
+                   .form-input{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 12px;                        
+                        position: relative;
+                         &:last-child{
+                            margin-bottom: 26px;
+                            input{
+                                padding: 19px 20px 32px;
+                                color: aqua;
+                            }
+                        }                        
+                        input{                            
+                            border-radius: 10px;       
+                            padding: 19px 20px 18px;
+                            font-weight: 600;
+                            font-size: 15px;
+                            line-height: 126%;
+                            color:$color;                           
+                                &::placeholder{            
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    line-height: 126%;
+                                    color: #cbcbcb;                                    
+                                }
+                                &:focus-visible{
+                                    outline: none; 
+                                }
+                                &:hover{
+                                    box-shadow: 0px 0px 1px 1px $primary-color;
+                                }
+                                &:focus{
+                                    box-shadow: 0px 0px 1px 1px $secondary-color;
+                                }
+                                &:active{
+                                    box-shadow: 0px 0px 1px 2px $secondary-color;
+                                }         
+                            }    
+                    }
+                    button{
+                        max-width: 310px;
+                        width: 100%;
+                    }
+                }           
+            }             
+        }
+    }
+}
+  
+

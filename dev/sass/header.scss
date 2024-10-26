@@ -47,11 +47,11 @@
             background-color: transparent;
              &::before{
             transform: rotate(45deg);
-        }
-        &::after{
+            }
+            &::after{
             transform: rotate(-45deg);
             top: 11px;
-        }
+            }
         }
        
     }
